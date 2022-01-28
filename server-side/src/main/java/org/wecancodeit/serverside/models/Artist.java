@@ -27,7 +27,7 @@ public class Artist {
 
     }
 
-    public Artist(Long id, String name, String era) {
+    public Artist(String name, String era) {
         this.name = name;
         this.era = era;
     }
