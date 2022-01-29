@@ -1,0 +1,67 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+    font-family: fantasy;
+    color: darkred;
+}
+
+header{
+    background-color: darkgrey;
+}
+.dropDownMenu{
+    display: flex;
+}
+
+.dropDownMenu .navBar ul{
+    list-style: none;
+}
+
+
+
+.navBar ul li{ 
+    font-size: 20px;
+    float: left;
+    padding: 20px;
+    border-right: 1px solid wheat;
+    border-bottom: 1px solid wheat;
+}
+.contactNav ul{
+    list-style: none;
+}
+
+.contactNav ul li{
+    font-size: 20px;
+    float: right;
+    padding: 20px;
+    border-right: 1px solid wheat;
+    border-bottom: 1px solid wheat;
+
+}
+
+
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    background-color: black;
+    color: aqua;
+}
+
+h1{
+    text-align: center;
+    padding: 2rem;
+    padding-top: 10%;
+}
+
+body{
+    background-color: bisque;
+}
+
+.pageTextDisplay{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;    
+    padding: 40px;
+}
+
