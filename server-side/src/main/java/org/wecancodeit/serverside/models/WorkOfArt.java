@@ -1,9 +1,10 @@
 package org.wecancodeit.serverside.models;
 
-import org.springframework.data.annotation.Id;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity

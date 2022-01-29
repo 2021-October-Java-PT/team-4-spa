@@ -4,6 +4,7 @@ package org.wecancodeit.serverside;
 import org.hibernate.jdbc.Work;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import org.wecancodeit.serverside.models.Activity;
 import org.wecancodeit.serverside.models.Artist;
 import org.wecancodeit.serverside.models.WorkOfArt;
 import org.wecancodeit.serverside.repositories.ActivityRepository;
@@ -49,7 +50,14 @@ public class Populator implements CommandLineRunner {
         workOfArtRepo.save(embroideredPicture);
         workOfArtRepo.save(beachScene);
 
-        
+        Activity learnProgramming = new Activity("Learn a new programming language", "Learn a different programming language and see how it relates to the one(s) you already know!");
+        Activity learnSport = new Activity("Learn how to play a new sport", "Learn how to play a different sport with either your friends or by yourself");
+        Activity teachDog = new Activity("Teach your dog a new trick", "Teach your dog a new trick and show it off to your parents");
+        Activity takeBath = new Activity("Take a bubble bath", "Take a bubble bath and relax for a while");
+        activityRepo.save(learnProgramming);
+        activityRepo.save(learnSport);
+        activityRepo.save(teachDog);
+        activityRepo.save(takeBath);
 
 
 
