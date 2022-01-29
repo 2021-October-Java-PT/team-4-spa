@@ -19,6 +19,7 @@ public class Artist {
     @OneToMany(mappedBy = "artists")
     private Collection<WorkOfArt> worksOfArt;
 
+
     public Collection<WorkOfArt> getWorksOfArt() {
         return worksOfArt;
     }
