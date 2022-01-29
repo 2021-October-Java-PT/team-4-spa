@@ -1,11 +1,11 @@
 package org.wecancodeit.serverside.models;
 
-import org.springframework.data.annotation.Id;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import java.util.Collection;
 
 @Entity
 public class WorkOfArt {
@@ -14,12 +14,19 @@ public class WorkOfArt {
     @GeneratedValue
     private Long id;
     private String titleOfWork;
-    private String classification;
+    private String medium;
     private String description;
     @OneToMany
     private Artist artist;
 
     public WorkOfArt() {
+    }
+
+    public WorkOfArt(String titleOfWork, String medium, String description, Artist artist) {
+        this.titleOfWork = titleOfWork;
+        this.medium = medium;
+        this.description = description;
+        this.artist = artist;
     }
 
     public Long getId() {
@@ -30,8 +37,8 @@ public class WorkOfArt {
         return titleOfWork;
     }
 
-    public String getClassification() {
-        return classification;
+    public String getMedium() {
+        return medium;
     }
 
     public String getDescription() {
@@ -40,13 +47,6 @@ public class WorkOfArt {
 
     public Artist getArtist() {
         return artist;
-    }
-
-    public WorkOfArt(String titleOfWork, String classification, String description, Artist artist) {
-        this.titleOfWork = titleOfWork;
-        this.classification = classification;
-        this.description = description;
-        this.artist = artist;
     }
 }
 

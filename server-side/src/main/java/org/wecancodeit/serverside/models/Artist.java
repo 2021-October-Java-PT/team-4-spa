@@ -1,10 +1,11 @@
 package org.wecancodeit.serverside.models;
 
 import antlr.actions.python.CodeLexer;
-import org.springframework.data.annotation.Id;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.Collection;
 
@@ -18,6 +19,7 @@ public class Artist {
     private String era;
     @OneToMany(mappedBy = "artists")
     private Collection<WorkOfArt> worksOfArt;
+
 
     public Collection<WorkOfArt> getWorksOfArt() {
         return worksOfArt;
