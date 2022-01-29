@@ -1,9 +1,19 @@
-import Contact from './components/About';
+import About from './components/About';
+import Bored from './components/Bored';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
+import Met from './components/Met';
 import apiHelpers from './api-helpers/apiHelpers';
-import Home from './components/Bored';
-import Home from './components/Met';
 
-console.log('Client Side is wired up!');
+buildPage();
+
+function buildPage() {
+    
+}
+
+function home() {
+    const displayElem = document.querySelector('.pageTextDisplay');
+    displayElem.innerHTML = Home();
+}
+
