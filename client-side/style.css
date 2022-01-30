@@ -1,21 +1,21 @@
 *{
-    margin: auto;
+    margin: 0;
     box-sizing: border-box;
     font-family: fantasy;
-    color: darkred;
+    color: #0c6eba;
 }
 
 header{
-    background-color: darkgrey;
-}
-.dropDownMenu{
-    display: flex;
+    background-color: #77a0d4;
+    border-bottom: 30px solid #ffc510;
+    background-image: url(images\jac-logo-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .dropDownMenu .navBar ul{
     list-style: none;
 }
-
 
 
 .navBar ul li{ 
@@ -35,7 +35,7 @@ header{
     padding: 20px;
     border-right: 1px solid wheat;
     border-bottom: 1px solid wheat;
-
+    margin-right: 1%;
 }
 
 
@@ -46,22 +46,67 @@ a{
 a:hover{
     background-color: black;
     color: aqua;
+    border-radius: 2rem;
 }
 
 h1{
     text-align: center;
-    padding: 2rem;
-    padding-top: 10%;
+    padding: 1rem;
 }
 
 body{
     background-color: bisque;
+    
 }
 
 .pageTextDisplay{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-flow: row;
     grid-gap: 2rem;    
     padding: 40px;
+    border: 3px solid #ffc510;
+    margin: 2%;
 }
+
+footer{
+    background-color: #77a0d4;
+    border-top: 30px solid #ffc510;
+    background-image: url(images\footer-background.jpg);
+    background-size: cover;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    text-align: left;
+}
+
+.footerLinks{
+    display: grid;
+    font-size: 20px;
+    padding: 20px;
+    grid-gap: 5px;
+    max-width: fit-content;
+    justify-content: center;
+}
+
+#footerImg{
+    max-height: 100px;
+}
+
+#artBtn{
+    max-width: 150px;
+    align-self: center;
+}
+
+#doBtn{
+    max-width: 150px;
+}
+
+#cookBtn{
+    max-width: 150px;
+}
+
+
 
