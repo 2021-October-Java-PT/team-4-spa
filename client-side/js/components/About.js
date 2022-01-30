@@ -12,6 +12,5 @@ export default function About() {
           </article>
       </div>
     </div>
-    <span id ="home">Home</span>
       `;
 }
