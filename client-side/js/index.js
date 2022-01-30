@@ -12,8 +12,15 @@ function buildPage() {
     
 }
 
+const homeBtn = document.querySelector('#homeBtn')
+
 function home() {
     const displayElem = document.querySelector('.pageTextDisplay');
     displayElem.innerHTML = Home();
 }
+
+homeBtn.addEventListener("click", ()=>{
+   home(); 
+});
+
 

@@ -43,7 +43,13 @@ a{
     text-decoration: none;
 
 }
-a:hover{
+.contactNav ul li:hover{
+    background-color: black;
+    color: aqua;
+    border-radius: 2rem;
+}
+
+.navBar ul li:hover{
     background-color: black;
     color: aqua;
     border-radius: 2rem;
@@ -107,6 +113,7 @@ footer{
 #cookBtn{
     max-width: 150px;
 }
+
 
 
 
