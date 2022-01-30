@@ -10,9 +10,7 @@ header{
     border-bottom: 30px solid #ffc510;
     background-image: url(images\jac-logo-background.jpg);
     background-repeat: no-repeat;
-}
-.dropDownMenu{
-    
+    background-size: cover;
 }
 
 .dropDownMenu .navBar ul{
@@ -62,8 +60,8 @@ body{
 }
 
 .pageTextDisplay{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-flow: row;
     grid-gap: 2rem;    
     padding: 40px;
     border: 3px solid #ffc510;
@@ -73,11 +71,13 @@ body{
 footer{
     background-color: #77a0d4;
     border-top: 30px solid #ffc510;
+    background-image: url(images\footer-background.jpg);
+    background-size: cover;
 }
 
-.footerDiv{
-    display: flexbox;
-    flex-direction: column;
+.footer-container{
+    display: flex;
+    flex-direction: row;
     padding: 10px;
     text-align: left;
 }
@@ -95,6 +95,18 @@ footer{
     max-height: 100px;
 }
 
+#artBtn{
+    max-width: 150px;
+    align-self: center;
+}
+
+#doBtn{
+    max-width: 150px;
+}
+
+#cookBtn{
+    max-width: 150px;
+}
 
 
 
