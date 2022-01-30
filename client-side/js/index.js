@@ -9,11 +9,28 @@ import apiHelpers from './api-helpers/apiHelpers';
 buildPage();
 
 function buildPage() {
+    home();
+    about();
+    met();
     
 }
 
 function home() {
     const displayElem = document.querySelector('.pageTextDisplay');
     displayElem.innerHTML = Home();
+}
+
+function about() {
+    const contactElem = document.querySelector('#aboutUs');
+    contactElem.addEventListener('click', () => {
+      app.innerHTML = About();
+    });
+}
+
+function met(){
+    const metElem = document.querySelector('#met');
+    metElem.addEventListener('click', ()=>{
+        app.innerHTML = Met();
+    })
 }
 
