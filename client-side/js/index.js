@@ -20,9 +20,16 @@ function buildPage() {
     
 }
 
+// function home() {
+//     const displayElem = document.querySelector('.pageTextDisplay');
+//     displayElem.innerHTML = Home();
+// }
+
 function home() {
-    const displayElem = document.querySelector('.pageTextDisplay');
-    displayElem.innerHTML = Home();
+    const homeElem = document.querySelector('.pageTextDisplay');
+    homeElem.addEventListener('click',()=>{
+        app.innerHTML=Home();
+    })
 }
 
 function about() {
