@@ -1,3 +1,4 @@
 {
-    "presets": ["@babel/preset-env"]
+    //Either remove @babel/preset-env to use Parcel's builtin transpilation, or replace with @parcel/babel-preset-env
+    //"presets": ["@babel/preset-env"]
 }
