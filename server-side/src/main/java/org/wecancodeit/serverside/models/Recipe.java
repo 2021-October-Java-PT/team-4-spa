@@ -3,6 +3,7 @@ package org.wecancodeit.serverside.models;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 @Entity
 public class Recipe {
@@ -12,6 +13,7 @@ public class Recipe {
     private Long id;
     private String dish;
     private String ingredients;
+    @Lob
     private String directions;
 
     public Recipe(){

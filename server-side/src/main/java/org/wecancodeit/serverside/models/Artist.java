@@ -3,10 +3,7 @@ package org.wecancodeit.serverside.models;
 import antlr.actions.python.CodeLexer;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
@@ -17,7 +14,8 @@ public class Artist {
     private Long id;
     private String name;
     private String era;
-    @OneToMany(mappedBy = "artists")
+    @OneToMany(mappedBy = "artist")
+
     private Collection<WorkOfArt> worksOfArt;
 
 

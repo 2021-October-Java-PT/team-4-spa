@@ -2,10 +2,8 @@ package org.wecancodeit.serverside.models;
 
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
+
 
 @Entity
 public class WorkOfArt {
@@ -15,8 +13,9 @@ public class WorkOfArt {
     private Long id;
     private String titleOfWork;
     private String medium;
+    @Lob
     private String description;
-    @OneToMany
+    @ManyToOne
     private Artist artist;
 
     public WorkOfArt() {
