@@ -1,9 +1,13 @@
 package org.wecancodeit.serverside.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import java.util.Collection;
+import java.util.Objects;
 
 @Entity
 public class Recipe {
@@ -15,6 +19,13 @@ public class Recipe {
     private String ingredients;
     @Lob
     private String directions;
+    @JsonIgnore
+    private Collection<Recipe> recipes;
+
+
+    public Collection<Recipe> getRecipes() {
+        return recipes;
+    }
 
     public Recipe(){
 
