@@ -13,6 +13,7 @@ public class Recipe {
     @GeneratedValue
     private Long id;
     private String dish;
+    @Lob
     private String ingredients;
     @Lob
     private String directions;

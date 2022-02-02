@@ -77,11 +77,47 @@ public class Populator implements CommandLineRunner {
                 "Shred with a fork and let the chicken absorb the salsa mixture for at least 15 more minutes. " +
                 "Serve in soft tortillas, taco shells, or over a bed of lettuce. Top with shredded cheese, tomatoes, avocado " +
                 "or anything else you'd like!", dinner);
+        Recipe learnToCookBreakfastBurritos = new Recipe("Breakfast Burritos", "1 medium flour tortilla, 1 egg (if you are not doing any add-on " +
+                "ingredients, you may want to do 2 eggs instead of 1), Salt & pepper, 1 teaspoon butter, Optional add-ons: (" +
+                "*Chopped breakfast sausage, ham, or bacon (heated) " +
+                "*Avocado slices or guacamole " +
+                "*Salsa " +
+                "*Shredded cheese " +
+                "*Breakfast potatoes or hashbrowns)", "Crack an egg into a small bowl. Add two pinches salt and whisk the egg well. Set " +
+                "aside. Assemble any add-ons that you want to include in the burrito and have them set aside and ready to go." +
+                "Heat a medium-size frying pan over medium-high heat (on a dial from 1-10, set to 7 or 8).  On a separate burner but at the same time, " +
+                "heat a small frying pan over medium heat on the stove (on a dial from 1-10, set to 5). Let the two pans heat for 3-5 minutes. Place " +
+                "the flour tortilla in the medium-size pan and heat for about 30-60 seconds, then flip and heat the tortilla on the second side for 30-60 " +
+                "seconds. Tortilla should be hot and starting to brown a bit in spots. Remove the tortilla from the pan and place on plate. Turn " +
+                "off the burner for the medium-size pan. Add butter to small frying pan and spread the butter around with a spatula. Pour the egg into the " +
+                "pan and tip the pan to spread the egg around. You can push the edges of the egg in towards the center of the pan and then tip the pan " +
+                "to have the liquid egg spread back out to the edge of the pan. Flip the egg to finish cooking completely then slide it onto the flour " +
+                "tortilla on the plate. The egg does not need to be pretty, it can get scrambled and flipped, no biggie! Turn off the stove burner for " +
+                "the small frying pan. The egg will cook very quickly, probably 30-45 seconds total. Place the add-on ingredients on top of the egg " +
+                "(if using), sprinkle with a little salt and pepper, then wrap the tortilla like a burrito.", breakfast );
+        Recipe learnToCookFrenchToast = new Recipe("French Toast", "2 large slices" +
+                "hearty sandwich bread, ½ cup" +
+                "milk, 1 tablespoon" +
+                "unsalted butter cut in half, 1" +
+                "large egg yolk,1 tablespoon" +
+                "packed brown sugar, 1 teaspoon" +
+                "vanilla extract, ⅛ teaspoon" +
+                "ground cinnamon, Pinch salt", "Place bread in toaster on lowest setting. Toast until bread feels dried out and is very light " +
+                "brown. (You may have to toast it twice.)  Place milk and 1 piece of butter in medium microwave-safe bowl. Heat in microwave until " +
+                "butter is melted and milk is warm, 30 seconds to 1 minute. Add egg yolk, sugar, vanilla, cinnamon, and salt to bowl with milk mixture " +
+                "and whisk to combine. Transfer mixture to pie plate or small baking dish.  Soak first side of 1 bread slice in milk mixture until it " +
+                "is wet but not falling apart, 20 seconds. Flip bread and soak second side for 20 seconds. Use spatula to remove bread from milk " +
+                "mixture, letting extra liquid drip back into dish. Transfer soaked bread to plate and repeat with remaining bread slice.  Melt remaining " +
+                "piece of butter in 12-inch nonstick skillet over medium-low heat. Use spatula to transfer bread slices to skillet. Cook until golden on " +
+                "first side, 3 to 4 minutes. Wipe spatula clean, flip slices, and cook until golden on second side, 3 to 4 minutes. Turn off heat. " +
+                "Transfer french toast to clean plate. Serve with maple syrup, confectioners’ sugar, cinnamon sugar, butter, and/or fresh fruit.", breakfast);
         recipeRepo.save(learnToCookChickenSoup);
         recipeRepo.save(learnToCookPigsInABlanket);
         recipeRepo.save(learnToCookMacAndCheese);
         recipeRepo.save(learnToCookLazyLasagna);
         recipeRepo.save(learnToCookChickenTacos);
+        recipeRepo.save(learnToCookBreakfastBurritos);
+        recipeRepo.save(learnToCookFrenchToast);
 
 //        Artist vanGogh = new Artist("Vincent Van Gogh", "1853-1890");
 //        Artist inman = new Artist("Henry Inman", "1801-1846");
