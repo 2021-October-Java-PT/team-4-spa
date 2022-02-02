@@ -10,6 +10,7 @@ import org.wecancodeit.serverside.repositories.MealRepository;
 
 import javax.annotation.Resource;
 import java.util.Collection;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin
@@ -23,11 +24,11 @@ public class MealController {
         return (Collection<Meal>) mealRepo.findAll();
     }
 
-//    @GetMapping("/api/meals/{mealId}"){
-//        public Meal getMeal(@PathVariable Long mealId){
-//            return mealRepo.findById(mealId).get();
-//        }
-//    }
+    @GetMapping("/api/meals/{id}")
+        public Optional<Meal> getMeal(@PathVariable Long id){
+            return mealRepo.findById(id);
+        }
+
 
 
 }

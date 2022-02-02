@@ -19,6 +19,10 @@ public class Recipe {
     @ManyToOne
     private Meal meal;
 
+    public Recipe(){
+
+    }
+
 
     public Recipe(String dish, String ingredients, String directions, Meal meal) {
         this.dish = dish;
