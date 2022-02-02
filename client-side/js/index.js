@@ -90,8 +90,12 @@ function activity(){
 }
 
 function cook(){
+    const cookElem = document.querySelector('#cookStuff');
     const cookBodyElem = document.querySelector('#cookBtn');
     cookBodyElem.addEventListener('click',()=>{
         appContent.innerHTML = Cook();
     });
+    cookElem.addEventListener('click',()=>{
+        appContent.innerHTML = Cook();
+    })
 }
