@@ -14,7 +14,6 @@ import org.wecancodeit.serverside.repositories.RecipeRepository;
 import org.wecancodeit.serverside.repositories.WorkOfArtRepository;
 
 import javax.annotation.Resource;
-import javax.persistence.Lob;
 
 @Component
 public class Populator implements CommandLineRunner {

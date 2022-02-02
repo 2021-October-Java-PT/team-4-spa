@@ -2,10 +2,7 @@ package org.wecancodeit.serverside.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Lob;
+import javax.persistence.*;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -19,7 +16,8 @@ public class Recipe {
     private String ingredients;
     @Lob
     private String directions;
-    @JsonIgnore
+
+    @ManyToOne
     private Collection<Recipe> recipes;
 
 
