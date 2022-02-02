@@ -1,13 +1,13 @@
-package org.wecancodeit.serverside.controllers;
+package org.wecancodeit.serverside.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.wecancodeit.serverside.models.Recipe;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.Collection;
+import java.util.Objects;
 
 @Entity
 public class Meal {
@@ -38,5 +38,13 @@ public class Meal {
 
     public Meal(){
 
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Meal meal = (Meal) o;
+        return Objects.equals(id, meal.id);
     }
 }

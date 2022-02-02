@@ -16,24 +16,15 @@ public class Recipe {
     private String ingredients;
     @Lob
     private String directions;
-
     @ManyToOne
-    private Collection<Recipe> recipes;
+    private Meal meal;
 
 
-    public Collection<Recipe> getRecipes() {
-        return recipes;
-    }
-
-    public Recipe(){
-
-
-    }
-
-    public Recipe(String dish, String ingredients, String directions) {
+    public Recipe(String dish, String ingredients, String directions, Meal meal) {
         this.dish = dish;
         this.ingredients = ingredients;
         this.directions = directions;
+        this.meal = meal;
     }
 
     public Long getId() {
@@ -50,6 +41,10 @@ public class Recipe {
 
     public String getDirections() {
         return directions;
+    }
+
+    public Meal getMeal() {
+        return meal;
     }
 }
 
