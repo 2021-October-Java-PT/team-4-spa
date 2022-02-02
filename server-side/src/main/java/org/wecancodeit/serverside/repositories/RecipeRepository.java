@@ -5,6 +5,6 @@ import org.wecancodeit.serverside.models.Recipe;
 
 import java.util.Optional;
 
-public interface RecipeRepository extends CrudRepository <Recipe, Long> {
+public interface RecipeRepository extends CrudRepository<Recipe, Long> {
     Optional<Recipe> findById(String dish);
 }

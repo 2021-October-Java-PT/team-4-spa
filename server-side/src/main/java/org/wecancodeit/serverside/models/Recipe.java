@@ -19,7 +19,7 @@ public class Recipe {
     @ManyToOne
     private Meal meal;
 
-    public Recipe(){
+    public Recipe() {
 
     }
 

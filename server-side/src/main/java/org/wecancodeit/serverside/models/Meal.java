@@ -20,15 +20,15 @@ public class Meal {
     @JsonIgnore
     private Collection<Recipe> recipes;
 
-    public Long getId(){
+    public Long getId() {
         return id;
     }
 
-    public String getTimeOfDay(){
+    public String getTimeOfDay() {
         return timeOfDay;
     }
 
-    public Meal(String timeOfDay){
+    public Meal(String timeOfDay) {
         this.timeOfDay = timeOfDay;
     }
 
@@ -36,7 +36,7 @@ public class Meal {
         return recipes;
     }
 
-    public Meal(){
+    public Meal() {
 
     }
 
