@@ -4,11 +4,10 @@ package org.wecancodeit.serverside;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import org.wecancodeit.serverside.models.Activity;
-import org.wecancodeit.serverside.models.Artist;
-import org.wecancodeit.serverside.models.Recipe;
-import org.wecancodeit.serverside.models.WorkOfArt;
+import org.wecancodeit.serverside.models.*;
 import org.wecancodeit.serverside.repositories.*;
+import org.wecancodeit.serverside.models.Meal;
+import org.wecancodeit.serverside.repositories.MealRepository;
 
 import javax.annotation.Resource;
 
@@ -64,13 +63,20 @@ public class Populator implements CommandLineRunner {
         activityRepo.save(teachDog);
         activityRepo.save(takeBath);
 
+        Meal breakfast = new Meal("Breakfast");
+        Meal lunch = new Meal("Lunch");
+        Meal dinner = new Meal("Dinner");
+        mealRepo.save(breakfast);
+        mealRepo.save(lunch);
+        mealRepo.save(dinner);
+
         Recipe learnToCookChickenSoup = new Recipe("Chicken Soup", "6 cups chicken broth, 2 carrots, " +
                 "2 stalks of celery, 1 medium onion, 12 oz. of canned chicken, 1 small bunch of parsley, 1/4 cup of rice", "" +
                 "Start by cutting the celery and carrots into small pieces. Dice the onion. Get a large stock pot, add a table spoon of oil, and bring up to medium heat. " +
                 "Add the vegetables and head them up until the unions turn slightly clear. Add a small amount of salt and pepper. Next add the chickem and" +
                 "chicken broth.  Turn up to medium-high until it comes to a boil. Add the rice.  Cover the pot. Turn the heat down to low." +
                 "Let the soup simmer until the vegetables and rice are tender and soft.  Chop up the parley leaves and add to the pot. " +
-                "Give it a taste and add salt and pepper as needed.", "Lunch");
+                "Give it a taste and add salt and pepper as needed.", lunch);
         Recipe learnToCookPigsInABlanket = new Recipe("Pigs In A Blanket", "2" +
                 "cans (8 oz) refrigerated Pillsbury™ Original Crescent Rolls (8 Count), 48" +
                 "cocktail-size smoked link sausages or hot dogs (from two 14-oz packages)",
@@ -79,7 +85,7 @@ public class Populator implements CommandLineRunner {
                         "of each triangle. Roll up each, starting at shortest side of triangle and rolling to " +
                         "opposite point; place point side down on 2 ungreased cookie sheets." +
                         "Bake 12 to 15 minutes or until golden brown, switching position of cookie sheets " +
-                        "halfway through baking. Immediately remove from cookie sheet. Serve warm.","Lunch");
+                        "halfway through baking. Immediately remove from cookie sheet. Serve warm.",lunch);
         Recipe learnToCookMacAndCheese = new Recipe("Mac and Cheese", "1 1/2 cups of water, 1 cup milk, 2 cups macaroni, 8-10 slices of " +
                 "deli American cheese, 1 teaspoon Dijon mustard, 1 cup shredded cheddar cheese.", "In medium saucepan, " +
                 "combine water and milk. Bring to boil over high heat. Carefully add macaroni to saucepan and reduce heat " +
@@ -87,25 +93,27 @@ public class Populator implements CommandLineRunner {
                 "macaroni is cooking, tear American cheese slices into small pieces. When macaroni is soft, add American " +
                 "cheese pieces and mustard to saucepan and cook, stirring constantly, until cheese is completely melted, " +
                 "about 1 minute. Turn off heat. Add cheddar and stir until evenly combined. Cover saucepan with lid and let sit for 5 minutes." +
-                "Use oven mitts to remove lid. Stir until sauce is smooth (sauce may look loose but will thicken as it cools). Serve immediately.", "Lunch");
+                "Use oven mitts to remove lid. Stir until sauce is smooth (sauce may look loose but will thicken as it cools). Serve immediately.", lunch);
         Recipe learnToCookLazyLasagna = new Recipe("Lazy Lasagna","1 (24oz) bag of frozen cheese ravioli, 1 (24oz) jar of marinara or pasta sauce, 2 cups shredded " +
                 "mozzarella (heaping), 1/2 cup shredded parmesan (optional)", "Preheat your oven to 400 degrees and grease a 9x13 baking dish." +
                 "Spread a thin layer of your marinara sauce onto the bottom of the pan (about 3/4 cup). " +
                 "Arrange half of the frozen ravioli in a single layer over the sauce (should be about 12 of them)." +
                 "Top with half of the remaining sauce and half of the mozzarella. Repeat the layers starting with what's left of the ravioli. Finish " +
                 "by topping with the remaining sauce and cheese. Sprinkle with parmesan if you'd like. Cover the baking dish with aluminum foil, and " +
-                "bake for 30 minutes. Remove the foil, and continue baking for an additional 15 minutes, or until the cheese starts to brown. ", "Dinner");
+                "bake for 30 minutes. Remove the foil, and continue baking for an additional 15 minutes, or until the cheese starts to brown. ",dinner);
         Recipe learnToCookChickenTacos = new Recipe("Chicken Tacos", "3-4 chicken breasts," +
                 "1 (16oz) jar of salsa, (8oz) cream cheese (cubed), taco seasoning (optional)," +
                 "tortillas for serving (optional)", "Spray your slow cooker with non-stick cooking spray. Place the chicken, salsa, cream " +
                 "cheese, and optional taco seasoning in and cook on HIGH for 3 hours (or LOW for 4-5 hours)." +
                 "Shred with a fork and let the chicken absorb the salsa mixture for at least 15 more minutes. " +
                 "Serve in soft tortillas, taco shells, or over a bed of lettuce. Top with shredded cheese, tomatoes, avocado " +
-                "or anything else you'd like!","Dinner");
+                "or anything else you'd like!", dinner);
         recipeRepo.save(learnToCookChickenSoup);
         recipeRepo.save(learnToCookPigsInABlanket);
         recipeRepo.save(learnToCookMacAndCheese);
         recipeRepo.save(learnToCookLazyLasagna);
         recipeRepo.save(learnToCookChickenTacos);
+
+
     }
 }
