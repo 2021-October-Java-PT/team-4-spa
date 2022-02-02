@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Met from './components/Met';
 import apiHelpers from './api-helpers/apiHelpers';
+import crud from './crud/crud';
 
 buildPage();
 
@@ -93,9 +94,25 @@ function cook(){
     const cookElem = document.querySelector('#cookStuff');
     const cookBodyElem = document.querySelector('#cookBtn');
     cookBodyElem.addEventListener('click',()=>{
-        appContent.innerHTML = Cook();
+        crud.getRequest('http://localhost:8080/api/recipes', recipes => {
+            appContent.innerHTML = Cook(recipes);
+        });
+
+        // cookingInfo();
     });
     cookElem.addEventListener('click',()=>{
-        appContent.innerHTML = Cook();
+        crud.getRequest('http://localhost:8080/api/recipes', recipes => {
+            appContent.innerHTML = Cook(recipes);
+        })
+        
     })
+    
 }
+
+// function cookingInfo(){
+//     const 
+// }
+
+
+    
+
