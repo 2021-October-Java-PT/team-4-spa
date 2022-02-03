@@ -99,14 +99,11 @@ function cook() {
             appContent.innerHTML = Cook(recipes);
         });
 
-        cookingInfo();
     });
     cookElem.addEventListener('click', () => {
         crud.getRequest('http://localhost:8080/api/recipes', recipes => {
             appContent.innerHTML = Cook(recipes);
         })
-
-        cookingInfo();
 
     })
 
@@ -120,7 +117,7 @@ function cookingInfo() {
                 appContent.innerHTML = Recipe(recipe);
             });
         }
-        
+
     });
 
     appContent.addEventListener('click', (event) => {
@@ -136,5 +133,3 @@ function cookingInfo() {
         };
     })
 }
-
-    
