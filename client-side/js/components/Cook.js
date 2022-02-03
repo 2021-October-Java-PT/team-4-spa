@@ -1,5 +1,13 @@
-export default function Cook() {
-    return `
-    <H1> read the directions it aint hard bro </H1>
-      `;
+export default function Cook(recipes) {
+  return `
+  <h1>Our Recipes </h1>
+  <ul class = 'recipe-list'>
+  ${recipes.map(recipe => {
+      return `
+      <li class='recipe-list__name'>${recipe.dish}
+      
+      <input type='hidden' id='recipeId' value='${recipe.id}'</li> `;
+  }).join('')}
+  </ul>
+  `;
 }
