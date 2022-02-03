@@ -1,14 +1,14 @@
 package org.wecancodeit.serverside.controllers;
 
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.springframework.web.bind.annotation.*;
 import org.wecancodeit.serverside.models.Recipe;
 import org.wecancodeit.serverside.repositories.RecipeRepository;
 
 import javax.annotation.Resource;
+import javax.swing.text.html.Option;
 import java.util.Collection;
 import java.util.Optional;
 
@@ -28,5 +28,6 @@ public class RecipeController {
     public Optional<Recipe> getRecipe(@PathVariable Long id) {
         return recipeRepo.findById(id);
     }
+
 
 }

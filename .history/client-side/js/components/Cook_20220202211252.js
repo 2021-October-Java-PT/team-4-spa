@@ -4,7 +4,7 @@ export default function Cook(recipes) {
   <ul class = 'recipe-list'>
   ${recipes.map(recipe => {
       return `
-      <li class='recipe-list__name'>${recipe.dish}
+      <li {cursor: pointer} class='recipe-list__name'>${recipe.dish}
       
       <input type='hidden' id='recipeId' value='${recipe.id}'</li> `;
   }).join('')}
