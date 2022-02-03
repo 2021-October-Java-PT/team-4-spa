@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
 import Met from './components/Met';
+import Recipe from './components/Recipe';
 import apiHelpers from './api-helpers/apiHelpers';
 import crud from './crud/crud';
 
@@ -19,6 +20,7 @@ function buildPage() {
     contact();
     activity();
     cook();
+    cookingInfo();
     
     
 }
@@ -98,20 +100,29 @@ function cook(){
             appContent.innerHTML = Cook(recipes);
         });
 
-        // cookingInfo();
+        cookingInfo();
     });
     cookElem.addEventListener('click',()=>{
         crud.getRequest('http://localhost:8080/api/recipes', recipes => {
             appContent.innerHTML = Cook(recipes);
         })
+
+        cookingInfo();
         
     })
     
 }
 
-// function cookingInfo(){
-//     const 
-// }
+function cookingInfo(){
+    appContent.addEventListener('click', (event) => {
+        if (event.target.classList.contains('recipe-list__name')){
+            const recipeId = event.target.querySelector('#recipeId').value;
+            crud.getRequest(`http://localhost:8080/api/recipes/${recipeId}`, recipe => {
+                appContent.innerHTML = Recipe(recipe);
+            });
+        }
+    });
+}
 
 
     
