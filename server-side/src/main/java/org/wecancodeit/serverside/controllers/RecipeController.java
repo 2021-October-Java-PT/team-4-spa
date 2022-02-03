@@ -36,6 +36,9 @@ public class RecipeController {
 
     @PostMapping("/api/recipes/{id}/add-rating")
     public Optional<Recipe> addRatingToRecipe(@RequestBody String body, @PathVariable Long id) throws JSONException{
+        System.out.println("=======================");
+        System.out.println(body);
+        System.out.println(id);
         JSONObject newRating = new JSONObject(body);
         String ratingName = newRating.getString("ratingName");
         Optional<Rating> ratingToAddOpt = ratingRepo.findByName(ratingName);
@@ -45,6 +48,13 @@ public class RecipeController {
             recipeToAddRatingTo.addRating(ratingToAddOpt.get());
             recipeRepo.save(recipeToAddRatingTo);
         }
+//        else{
+//            Rating rating = new Rating(body);
+//            Optional<Recipe> recipeToAddRatingToOpt = recipeRepo.findById(id);
+//            Recipe recipeToAddRatingTo = recipeToAddRatingToOpt.get();
+//            recipeToAddRatingTo.addRating(rating);
+//            recipeRepo.save(recipeToAddRatingTo);
+//        }
         return recipeRepo.findById(id);
     }
 

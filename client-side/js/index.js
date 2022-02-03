@@ -22,9 +22,6 @@ function buildPage() {
     activity();
     cook();
     cookingInfo();
-    
-
-
 }
 
 // function home() {
@@ -130,7 +127,10 @@ function cookingInfo() {
         if (event.target.classList.contains('add-rating__submit')) {
             const recipeId = event.target.parentElement.querySelector('#recipeId').value;
             const ratingName = event.target.parentElement.querySelector('.add-rating__name').value;
-            crud.postRequest(`http://localhost:8080/api/recipes/${recipeId}/add-rating`, {
+            console.log(ratingName);
+            console.log(recipeId);
+            const ratingUrl = 'http://localhost:8080/api/recipes/' + recipeId + '/add-rating';
+            crud.postRequest(ratingUrl, {
                 ratingName: ratingName
             }, (recipe) => appContent.innerHTML = Recipe(recipe));
         };
