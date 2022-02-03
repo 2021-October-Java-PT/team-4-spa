@@ -1,6 +1,10 @@
 export default function Contact() {
     return `
-    <H1>Dont like what we are teaching your kids? teach them yourself. Suggestions not wanted</H1>
+    <h2>Contact JAC</h2>
     
+      <div id ="contactDiv">
+      <li>Email: jacindustries@email.net</li>
+      <li>Phone: (555)555-5555</li>
+      </div>
       `;
 }

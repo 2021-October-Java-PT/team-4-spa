@@ -114,6 +114,53 @@ footer{
     max-width: 150px;
 }
 
+#contactDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: .5rem;
+    list-style: none;
+    font-size: 20px;
+}
+
+.aboutDisplay{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    grid-gap: 2rem; 
+    padding: 40px;
+    border: 3px solid #ffc510;
+    margin: 3%;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+#tjPic{
+    max-width: 300px;
+    justify-self: center;
+}
+
+#mattPic{
+    max-width: 300px;
+}
+
+#tommyPic{
+    max-width: 300px;
+}
+
+#landonPic{
+max-width: 300px;
+}
+
+#aaronPic{
+    max-width: 300px;
+}
+
 
 
 
