@@ -4,7 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 public class Recipe {
@@ -19,6 +21,8 @@ public class Recipe {
     private String directions;
     @ManyToOne
     private Meal meal;
+    @ManyToMany
+    private Set<Rating> ratings;
 
     public Recipe() {
 
@@ -30,6 +34,11 @@ public class Recipe {
         this.ingredients = ingredients;
         this.directions = directions;
         this.meal = meal;
+        this.ratings = new HashSet<>();
+    }
+
+    public Collection<Rating> getRatings(){
+        return ratings;
     }
 
     public Long getId() {
