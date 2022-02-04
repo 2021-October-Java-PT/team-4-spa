@@ -60,6 +60,23 @@ public class Recipe {
     public Meal getMeal() {
         return meal;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Recipe recipe = (Recipe) o;
+        return Objects.equals(id, recipe.id);
+    }
+
+//    @Override
+    public void addRating(Rating ratingToAdd){
+        ratings.add(ratingToAdd);
+    }
+
+    public int hashCode(){
+        return Objects.hash(id);
+    }
 }
 
 
