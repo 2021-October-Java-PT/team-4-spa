@@ -40,7 +40,7 @@ export default function About() {
     <div class = "bio">
         <h2>Landon Sims</h2>
         <img id="landonPic" src="${landonPic}" alt="landon-profile-img">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero nibh, cursus at eleifend a, sodales sit amet magna. Duis convallis orci venenatis nisl iaculis elementum. Nunc tempor nibh elit, id volutpat mi tempus tempor.</p>
+        <p>Landon has many interests from art to mathematics and most things in between. He is currently working on a side project that echos the work of Edward Thorpe, a mathematician that beat the casino and later wall street. After that he plans to use those same skills to transition to a new algorithmic trading project.</p>
         <h4>Contact</h4>
         <li>Personal Site: iLOVEgreasyRussians.com</li>
         <li>Email: Landon@JACenterprises.com</li>
