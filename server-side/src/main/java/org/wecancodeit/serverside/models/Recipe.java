@@ -37,7 +37,7 @@ public class Recipe {
         this.ratings = new HashSet<>();
     }
 
-    public Collection<Rating> getRatings(){
+    public Collection<Rating> getRatings() {
         return ratings;
     }
 
@@ -69,12 +69,11 @@ public class Recipe {
         return Objects.equals(id, recipe.id);
     }
 
-//    @Override
-    public void addRating(Rating ratingToAdd){
+    public void addRating(Rating ratingToAdd) {
         ratings.add(ratingToAdd);
     }
 
-    public int hashCode(){
+    public int hashCode() {
         return Objects.hash(id);
     }
 }

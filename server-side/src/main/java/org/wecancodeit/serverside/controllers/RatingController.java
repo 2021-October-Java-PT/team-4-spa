@@ -19,16 +19,16 @@ public class RatingController {
     private RatingRepository ratingRepo;
 
     @GetMapping("/api/ratings")
-    public Collection<Rating> getRatings(){
-        return (Collection<Rating>)  ratingRepo.findAll();
+    public Collection<Rating> getRatings() {
+        return (Collection<Rating>) ratingRepo.findAll();
     }
 
     @PostMapping("/api/add-rating")
-    public Collection<Rating> addRating(@RequestBody String body) throws JSONException{
+    public Collection<Rating> addRating(@RequestBody String body) throws JSONException {
         JSONObject newRating = new JSONObject(body);
         String ratingName = newRating.getString("ratingName");
         Optional<Rating> ratingToAddOpt = ratingRepo.findByName(ratingName);
-        if (ratingToAddOpt.isEmpty()){
+        if (ratingToAddOpt.isEmpty()) {
             Rating ratingToAdd = new Rating(ratingName);
             ratingRepo.save(ratingToAdd);
         }

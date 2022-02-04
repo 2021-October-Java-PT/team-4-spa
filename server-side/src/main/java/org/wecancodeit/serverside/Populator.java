@@ -80,17 +80,17 @@ public class Populator implements CommandLineRunner {
         Recipe learnToCookBreakfastBurritos = new Recipe("Breakfast Burritos", "1 medium flour tortilla, 1 egg (if you are not doing any add-on " +
                 "ingredients, you may want to do 2 eggs instead of 1), Salt & pepper, 1 teaspoon butter, Optional add-ons: (*Chopped breakfast sausage, ham, or bacon (heated) *Avocado slices or guacamole *Salsa *Shredded cheese *Breakfast potatoes or hashbrowns)",
                 "1. Crack an egg into a small bowl. Add two pinches salt and whisk the egg well. Set " +
-                "aside. 2. Assemble any add-ons that you want to include in the burrito and have them set aside and ready to go." +
-                "3. Heat a medium-size frying pan over medium-high heat (on a dial from 1-10, set to 7 or 8).  4. On a separate burner but at the same time, " +
-                "heat a small frying pan over medium heat on the stove (on a dial from 1-10, set to 5). Let the two pans heat for 3-5 minutes. 5. Place " +
-                "the flour tortilla in the medium-size pan and heat for about 30-60 seconds, then flip and heat the tortilla on the second side for 30-60 " +
-                "seconds. Tortilla should be hot and starting to brown a bit in spots.  Remove the tortilla from the pan and place on plate. Turn " +
-                "off the burner for the medium-size pan. 6. Add butter to small frying pan and spread the butter around with a spatula. Pour the egg into the " +
-                "pan and tip the pan to spread the egg around. You can push the edges of the egg in towards the center of the pan and then tip the pan " +
-                "to have the liquid egg spread back out to the edge of the pan. Flip the egg to finish cooking completely then slide it onto the flour " +
-                "tortilla on the plate. The egg does not need to be pretty, it can get scrambled and flipped, no biggie! 7. Turn off the stove burner for " +
-                "the small frying pan. The egg will cook very quickly, probably 30-45 seconds total. Place the add-on ingredients on top of the egg " +
-                "(if using), sprinkle with a little salt and pepper, then wrap the egg and add-ons in the tortilla like a burrito.", breakfast );
+                        "aside. 2. Assemble any add-ons that you want to include in the burrito and have them set aside and ready to go." +
+                        "3. Heat a medium-size frying pan over medium-high heat (on a dial from 1-10, set to 7 or 8).  4. On a separate burner but at the same time, " +
+                        "heat a small frying pan over medium heat on the stove (on a dial from 1-10, set to 5). Let the two pans heat for 3-5 minutes. 5. Place " +
+                        "the flour tortilla in the medium-size pan and heat for about 30-60 seconds, then flip and heat the tortilla on the second side for 30-60 " +
+                        "seconds. Tortilla should be hot and starting to brown a bit in spots.  Remove the tortilla from the pan and place on plate. Turn " +
+                        "off the burner for the medium-size pan. 6. Add butter to small frying pan and spread the butter around with a spatula. Pour the egg into the " +
+                        "pan and tip the pan to spread the egg around. You can push the edges of the egg in towards the center of the pan and then tip the pan " +
+                        "to have the liquid egg spread back out to the edge of the pan. Flip the egg to finish cooking completely then slide it onto the flour " +
+                        "tortilla on the plate. The egg does not need to be pretty, it can get scrambled and flipped, no biggie! 7. Turn off the stove burner for " +
+                        "the small frying pan. The egg will cook very quickly, probably 30-45 seconds total. Place the add-on ingredients on top of the egg " +
+                        "(if using), sprinkle with a little salt and pepper, then wrap the egg and add-ons in the tortilla like a burrito.", breakfast);
         Recipe learnToCookFrenchToast = new Recipe("French Toast", "2 large slices" +
                 "hearty sandwich bread, ½ cup" +
                 "milk, 1 tablespoon" +
