@@ -114,14 +114,15 @@ footer{
     max-width: 150px;
 }
 
-#contactDiv{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: .5rem;
-    list-style: none;
-    font-size: 20px;
+
+.page-image{
+    border-radius: 2rem;
 }
+
+.customer-Service{
+    padding-top: 25%;
+}
+
 
 .aboutDisplay{
     display: grid;
@@ -209,7 +210,6 @@ img{
   li{
       list-style: none;
   }
-
 
 
 
