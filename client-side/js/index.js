@@ -24,18 +24,6 @@ function buildPage() {
     cookingInfo();
 }
 
-// function home() {
-//     const displayElem = document.querySelector('.pageTextDisplay');
-//     displayElem.innerHTML = Home();
-// }
-// function home() {
-//     const displayElem = document.querySelector('.pageTextDisplay');
-//     displayElem.innerHTML = Home();
-// }
-
-// homeBtn.addEventListener("click", ()=>{
-//    home(); 
-// });
 function home() {
     const homeElem = document.querySelector('#headerImg');
     const homeFooterElem = document.querySelector('#footerImg');
@@ -62,14 +50,14 @@ function met() {
     const metElem = document.querySelector('#met');
     const metBodyElem = document.querySelector('#artBtn');
 
-    metElem.addEventListener('click', ()=>{
-        apiHelpers.getRequest('https://collectionapi.metmuseum.org/public/collection/v1/objects/18354', (painting) =>{
+    metElem.addEventListener('click', () => {
+        apiHelpers.getRequest('https://collectionapi.metmuseum.org/public/collection/v1/objects/18354', (painting) => {
             appContent.innerHTML = Met(painting);
         });
-        
+
     });
-    metBodyElem.addEventListener('click',()=>{
-        apiHelpers.getRequest('https://collectionapi.metmuseum.org/public/collection/v1/488978', (painting) =>{
+    metBodyElem.addEventListener('click', () => {
+        apiHelpers.getRequest('https://collectionapi.metmuseum.org/public/collection/v1/488978', (painting) => {
             appContent.innerHTML = Met(painting);
         });
     });
