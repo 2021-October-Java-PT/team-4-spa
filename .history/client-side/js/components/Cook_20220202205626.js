@@ -1,6 +1,6 @@
 export default function Cook(recipes) {
   return `
-  <h1>Fun Recipes </h1>
+  <h1>Our Recipes </h1>
   <ul class = 'recipe-list'>
   ${recipes.map(recipe => {
       return `
