@@ -211,5 +211,15 @@ img{
       list-style: none;
   }
 
+  #id {
+      cursor: pointer;
+  }
+
+  .recipe-list{
+      text-align: center;
+  }
+
+  
+
 
 
