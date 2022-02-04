@@ -21,7 +21,7 @@ export default function About() {
     <div class = "bio">
         <h2>Matt Welfley</h2>
         <img id="mattPic" src="${mattPic}" alt="matt-profile-img">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero nibh, cursus at eleifend a, sodales sit amet magna. Duis convallis orci venenatis nisl iaculis elementum. Nunc tempor nibh elit, id volutpat mi tempus tempor.</p>
+        <p>I am a hard working, loyal, and open minded problem solver who sees things clearly and appreciates creative outlets like music, both as and instrumentalist and record collector, and cooking. I have been a member of the workforce since I was a teenager, which equates to 30+ years, with a background in office administration, management, and HR with a specialty in staffing and new hire onboarding. I’ve also been involved in fixed asset management and safety/maintenance coordination. I’m currently enrolled in a software development bootcamp with a focus in Java in order to expand my talents and toolkit so I can be as valuable as possible to an organization.</p>
         <h4>Contact</h4>
         <li>Personal Site: iDontTalkEnough4TJtoThinkofAfunnyDomain.com</li>
         <li>Email: matt@JACenterprises.com</li>
