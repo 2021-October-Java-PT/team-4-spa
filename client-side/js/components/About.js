@@ -32,10 +32,10 @@ export default function About() {
     <div class = "bio">
         <h2>Thomas Fountain</h2>
         <img id="tommyPic" src="${tommyPic}" alt="tommy-profile-img">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero nibh, cursus at eleifend a, sodales sit amet magna. Duis convallis orci venenatis nisl iaculis elementum. Nunc tempor nibh elit, id volutpat mi tempus tempor.</p>
+        <p>Thomas Fountain graduated from WeCanCodeIT in 2022 with a certication in software development. He enjoys playing basketball in his spare time. He also enjoys finding new ways to create solutions through coding!</p>
         <h4>Contact</h4>
-        <li>Personal Site: turndown4WHAT.com</li>
-        <li>Email: tommy@JACenterprises.com</li>
+        <li>Personal Site: https://thomasfountain3.github.io/</li>
+        <li>Email: tfountain15@gmail.com</li>
     </div>
     <div class = "bio">
         <h2>Landon Sims</h2>
