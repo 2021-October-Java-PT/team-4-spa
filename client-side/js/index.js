@@ -63,14 +63,14 @@ function met() {
     const metBodyElem = document.querySelector('#artBtn');
 
     metElem.addEventListener('click', ()=>{
-        apiHelpers.getRequest('https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=mountains', mountainPicIds =>{
-            appContent.innerHTML = Met(mountainPicIds);
+        apiHelpers.getRequest('https://collectionapi.metmuseum.org/public/collection/v1/objects/18354', (painting) =>{
+            appContent.innerHTML = Met(painting);
         });
         
     });
     metBodyElem.addEventListener('click',()=>{
-        apiHelpers.getRequest('https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=mountains', mountainPicIds =>{
-            appContent.innerHTML = Met(mountainPicIds);
+        apiHelpers.getRequest('https://collectionapi.metmuseum.org/public/collection/v1/488978', (painting) =>{
+            appContent.innerHTML = Met(painting);
         });
     });
 }
